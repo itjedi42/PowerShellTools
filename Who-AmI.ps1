@@ -1,0 +1,66 @@
+﻿Function Who-AmI
+{
+    $Computer = Get-ComputerInfo
+
+    Write-Host "Manufacturer: " $Computer.CsManufacturer
+    Write-Host "Model:" $Computer.CsModel
+    Write-Host "Serial:" $Computer.BiosSeralNumber
+    Write-Host "Domain:" $Computer.CsDomain
+    Write-Host "Host Name:" $Computer.CsDNSHostName
+    Write-Host "Physical Processors:" $Computer.CsNumberOfProcessors
+    Write-Host "Logical Processors:" $Computer.CsNumberOfLogicalProcessors
+    Write-Host "Installed Memory:" ($Computer.CsPhyicallyInstalledMemory/1024/1024) "GB"
+    Write-Host "Operating System:" $Computer.OsName
+    Write-Host "Architecture:" $Computer.OsArchitecture
+    Write-Host "Build Number:" $Computer.OsHardwareAbstractionLayer
+}
+
+Who-AmI
+# SIG # Begin signature block
+# MIIIbgYJKoZIhvcNAQcCoIIIXzCCCFsCAQExCzAJBgUrDgMCGgUAMGkGCisGAQQB
+# gjcCAQSgWzBZMDQGCisGAQQBgjcCAR4wJgIDAQAABBAfzDtgWUsITrck0sYpfvNR
+# AgEAAgEAAgEAAgEAAgEAMCEwCQYFKw4DAhoFAAQUHS+/f5Svnt/T419eD6RQjY4w
+# s/ugggXWMIIF0jCCBLqgAwIBAgITQQAAAAfGbW0qQCNC3QAAAAAABzANBgkqhkiG
+# 9w0BAQsFADBKMRIwEAYKCZImiZPyLGQBGRYCbWUxFzAVBgoJkiaJk/IsZAEZFgdm
+# ZWx0b25zMRswGQYDVQQDExJGZWx0b25zLk1lIFJvb3QgQ0EwHhcNMjAwOTIzMDIz
+# OTMwWhcNMjUwOTIyMDIzOTMwWjBrMRIwEAYKCZImiZPyLGQBGRYCbWUxFzAVBgoJ
+# kiaJk/IsZAEZFgdmZWx0b25zMRYwFAYDVQQLDA1GZWx0b25zX1VzZXJzMQ8wDQYD
+# VQQLEwZBZHVsdHMxEzARBgNVBAMTCkJlbiBGZWx0b24wggEiMA0GCSqGSIb3DQEB
+# AQUAA4IBDwAwggEKAoIBAQCUcJUpo1B+IV7XmsGXRuhiM21ANYlyCYb6MafdGoL9
+# u6iEejgoWBg1nc9XPXQ0b0q9mxW9dae6elSR4v6RJ3/cukU5OWv9cwS+tg6Vk+xM
+# pvCGjP62gSoU4ALLGsi1y/2EjjPcGQ8QdYVDxfDtaWjk7Mw4jlIDePPT4nD2yjme
+# j2IwLTgIvPATz/ujVWhmFIVX31j6haz8Vs3GIy8/XJaafhb7Cuf3w7yt7xtvGIbX
+# WipJ95H84r4JawVHyzMv+Mfycf5rMa9iug9wz5AyfHiXUpSpe9/l70GsKA1Ovvxa
+# esJWEMlPzgzTGYdUnw3XoBzwtHILgyWhlBgQY0QzKAzxAgMBAAGjggKOMIICijA8
+# BgkrBgEEAYI3FQcELzAtBiUrBgEEAYI3FQimv3mE4ch/hK2PM4S8vVSGlYUBE4aA
+# p16G7M5LAgFkAgEHMBMGA1UdJQQMMAoGCCsGAQUFBwMDMA4GA1UdDwEB/wQEAwIG
+# wDAbBgkrBgEEAYI3FQoEDjAMMAoGCCsGAQUFBwMDMB0GA1UdDgQWBBT65NYBlKZp
+# OLVuSMqVPpDxtSuL3zAfBgNVHSMEGDAWgBTq742pWF/vYbOwytRAnxhyvm4WDzCB
+# 0gYDVR0fBIHKMIHHMIHEoIHBoIG+hoG7bGRhcDovLy9DTj1GZWx0b25zLk1lJTIw
+# Um9vdCUyMENBLENOPVNFUlZFUixDTj1DRFAsQ049UHVibGljJTIwS2V5JTIwU2Vy
+# dmljZXMsQ049U2VydmljZXMsQ049Q29uZmlndXJhdGlvbixEQz1mZWx0b25zLERD
+# PW1lP2NlcnRpZmljYXRlUmV2b2NhdGlvbkxpc3Q/YmFzZT9vYmplY3RDbGFzcz1j
+# UkxEaXN0cmlidXRpb25Qb2ludDCBxwYIKwYBBQUHAQEEgbowgbcwgbQGCCsGAQUF
+# BzAChoGnbGRhcDovLy9DTj1GZWx0b25zLk1lJTIwUm9vdCUyMENBLENOPUFJQSxD
+# Tj1QdWJsaWMlMjBLZXklMjBTZXJ2aWNlcyxDTj1TZXJ2aWNlcyxDTj1Db25maWd1
+# cmF0aW9uLERDPWZlbHRvbnMsREM9bWU/Y0FDZXJ0aWZpY2F0ZT9iYXNlP29iamVj
+# dENsYXNzPWNlcnRpZmljYXRpb25BdXRob3JpdHkwKQYDVR0RBCIwIKAeBgorBgEE
+# AYI3FAIDoBAMDmJlbkBmZWx0b25zLm1lMA0GCSqGSIb3DQEBCwUAA4IBAQADtfCi
+# ZIBhyV3AH1vESuATmL0fvueigupTTsn71ddAalxwn34ESceBUR0fNv2GyGbS0aou
+# qf8sO3FE4w5lTGyXC6Y9bVH+o2/toqjxHU78H3t7kGSWSFflAtJ+WGdpHCvTBl8J
+# abGgK+ddNtOyes4j96RQnjCnepShiXPnD3bWx3uCg3HzPhe/EFG4YHWv6+2fzaC/
+# pTbmO5MXB2Ewihniurtsr8vsSlNlnet8gpZy8fPfeO11LgoE79wH2HVqUQ1xlPei
+# meduvpglPHOfM8Ywq+AfMdD7eAcZHWw3qfluzfQNMTkGyM2qcjcyFbS1NWm10mBC
+# 1tAkw+Yl4V8Mf8mMMYICAjCCAf4CAQEwYTBKMRIwEAYKCZImiZPyLGQBGRYCbWUx
+# FzAVBgoJkiaJk/IsZAEZFgdmZWx0b25zMRswGQYDVQQDExJGZWx0b25zLk1lIFJv
+# b3QgQ0ECE0EAAAAHxm1tKkAjQt0AAAAAAAcwCQYFKw4DAhoFAKB4MBgGCisGAQQB
+# gjcCAQwxCjAIoAKAAKECgAAwGQYJKoZIhvcNAQkDMQwGCisGAQQBgjcCAQQwHAYK
+# KwYBBAGCNwIBCzEOMAwGCisGAQQBgjcCARUwIwYJKoZIhvcNAQkEMRYEFBrQ7hFY
+# baR5nwh5haG937dOFqu3MA0GCSqGSIb3DQEBAQUABIIBAAUJezOpsH3sfPrXlsl+
+# fTTroh+YVoIA1jZXvGlyGhoyXQlnXGYzHps6qioXkqVYeLPxSW3/HI1trJziqHxP
+# pYp5pIQ/v+gHei2CwiAdJwM02QmQRWILQl9l9f0FOwA2KErZBGOY3BTdrqctj4oJ
+# tki6P4DjRWe1E/wptPFoXsakVYZDMBrW0O0XvqaC+Fn2hIZyvZGnIYh+zqumSGfo
+# kr7V58V/8oVD0VGaYX+7xuaeKUb0YRtyFQDFBI9nhuqNRn9hqwOJDDcot3DEqUAt
+# lV4nQC1DeocyK9OEURdT+2HvyF0POzeO9whFsJS4OmeO9s3NECJBU3soPhJeNJrw
+# vZ8=
+# SIG # End signature block
